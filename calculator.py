@@ -20,8 +20,8 @@ while True:
 
     if choice == "1":
         clean_screen()
-        num1 = float(input("Select one number"))
-        num2 = float(input("Select another number"))
+        num1 = float(input("Select one number:"))
+        num2 = float(input("Select another number:"))
         result = num1 + num2
         print(f"Your result is {result}")
         print("Press ENTER to return to the menu")
@@ -29,8 +29,8 @@ while True:
 
     elif choice == "2":
         clean_screen()
-        num1 = float(input("Select one number"))
-        num2 = float(input("Selecet another number"))
+        num1 = float(input("Select one number:"))
+        num2 = float(input("Selecet another number:"))
         result = num1 - num2
         print(f"Your result is {result}")
         print("Press ENTER to return to the menu")
@@ -38,8 +38,8 @@ while True:
     
     elif choice == "3":
         clean_screen()
-        num1 = float(input("Select one number"))
-        num2 = float(input("Select another number"))
+        num1 = float(input("Select one number:"))
+        num2 = float(input("Select another number:"))
         result = num1 * num2
         print(f"Your result is {result}")
         print("Press ENTER to return to the menu")
@@ -47,8 +47,8 @@ while True:
 
     elif choice == "4":
         clean_screen()
-        num1 = float(input("Select one number"))
-        num2 = float(input("Select one number"))
+        num1 = float(input("Select one number:"))
+        num2 = float(input("Select one number:"))
         if num2 != 0:
             result = num1 / num2 # Entire value
             remainder = num1 % num2 # Remainder
@@ -60,8 +60,8 @@ while True:
 
     elif choice == "5":
         clean_screen()
-        num1 = float(input("Select the base number"))
-        num2 = float(input("Select the exponent"))
+        num1 = float(input("Select the base number:"))
+        num2 = float(input("Select the exponent:"))
         result = pow(num1, num2)
         print(f"Your result is {result}")
         print("Press ENTER to return to the menu")
