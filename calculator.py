@@ -1,0 +1,68 @@
+import os
+import time
+
+def clean_screen():
+    os.system("cls" if os.name == "nt" else "clear")
+
+def menu():
+    print("\033[1;32m\n====MENU====")
+    print("\033[0;37m 1 - Addition")
+    print("\033[0;37m 2 - Subtraction")
+    print("\033[0;37m 3 - Multiplication")
+    print("\033[0;37m 4 - Division")
+    print("\033[0;37m 5 - Quit")
+
+while True:
+    clean_screen()
+    menu()
+    choice = input("\033[1;32mPlease select one option.")
+
+    if choice == "1":
+        clean_screen()
+        num1 = float(input("Select one number"))
+        num2 = float(input("Select another number"))
+        result = num1 + num2
+        print(f"Your result is {result}")
+        print("Press ENTER to return to the menu")
+        input()
+
+    elif choice == "2":
+        clean_screen()
+        num1 = float(input("Select one number"))
+        num2 = float(input("Selecet another number"))
+        result = num1 - num2
+        print(f"Your result is {result}")
+        print("Press ENTER to return to the menu")
+        input()
+    
+    elif choice == "3":
+        clean_screen()
+        num1 = float(input("Select one number"))
+        num2 = float(input("Select another number"))
+        result = num1 * num2
+        print(f"Your result is {result}")
+        print("Press ENTER to return to the menu")
+        input()
+
+    elif choice == "4":
+        clean_screen()
+        num1 = float(input("Select one number"))
+        num2 = float(input("Select one number"))
+        if num2 != 0:
+            result = num1 / num2 # Entire value
+            remainder = num1 % num2 # Remainder
+            print(f"Your result is {result}, with a remainder of {remainder}")
+        else:
+            print("\033[0;31mError: DIvision by 0!")
+        print("Press ENTER to return to the menu")
+        input()    
+
+    elif choice == "5":
+        print("\033[0;31mClosing tab...")
+        time.sleep(2)
+        break
+
+    else:
+        print("\033[0;31mInvalid option!")
+
+    
