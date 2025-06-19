@@ -7,10 +7,11 @@ def clean_screen():
 def menu():
     print("\033[1;32m\n====MENU====")
     print("\033[0;37m 1 - Addition")
-    print("\033[0;37m 2 - Subtraction")
-    print("\033[0;37m 3 - Multiplication")
-    print("\033[0;37m 4 - Division")
-    print("\033[0;37m 5 - Quit")
+    print(" 2 - Subtraction")
+    print(" 3 - Multiplication")
+    print(" 4 - Division")
+    print(" 5 - Exponetiation")
+    print(" 6 - Quit")
 
 while True:
     clean_screen()
@@ -55,14 +56,21 @@ while True:
         else:
             print("\033[0;31mError: DIvision by 0!")
         print("Press ENTER to return to the menu")
-        input()    
+        input()
 
     elif choice == "5":
+        clean_screen()
+        num1 = float(input("Select the base number"))
+        num2 = float(input("Select the exponent"))
+        result = pow(num1, num2)
+        print(f"Your result is {result}")
+        print("Press ENTER to return to the menu")
+        input()
+
+    elif choice == "6":
         print("\033[0;31mClosing tab...")
         time.sleep(2)
         break
 
     else:
         print("\033[0;31mInvalid option!")
-
-    
